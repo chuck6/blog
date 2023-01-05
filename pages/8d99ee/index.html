@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ES_API集合 | 梵一的博客</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/blog/img/favicon.ico">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3077305_pt8umhrn4k9.css">
+    <meta name="description" content="人生没有白走的路，每一步都算数！">
+    <meta name="keywords" content="个人技术博客,技术文档,学习,面试,vue,python,git,github,markdown">
+    <meta name="baidu-site-verification" content="7F55weZDDc">
+    <meta name="theme-color" content="#11a8cd">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.7b14dd56.css" as="style"><link rel="preload" href="/blog/assets/js/app.83c3319c.js" as="script"><link rel="preload" href="/blog/assets/js/4.85336ac2.js" as="script"><link rel="preload" href="/blog/assets/js/20.10a4abbb.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.d37f10e5.js"><link rel="prefetch" href="/blog/assets/js/100.d5d0a706.js"><link rel="prefetch" href="/blog/assets/js/101.94bbf93d.js"><link rel="prefetch" href="/blog/assets/js/102.8757086a.js"><link rel="prefetch" href="/blog/assets/js/103.afe2a8e8.js"><link rel="prefetch" href="/blog/assets/js/104.f8a2d98f.js"><link rel="prefetch" href="/blog/assets/js/105.fae23e86.js"><link rel="prefetch" href="/blog/assets/js/106.5f1acc3c.js"><link rel="prefetch" href="/blog/assets/js/107.65cb55fb.js"><link rel="prefetch" href="/blog/assets/js/108.de4171a5.js"><link rel="prefetch" href="/blog/assets/js/109.b9ae7312.js"><link rel="prefetch" href="/blog/assets/js/11.e3fe5403.js"><link rel="prefetch" href="/blog/assets/js/12.48bd0ae8.js"><link rel="prefetch" href="/blog/assets/js/13.b9a9c89f.js"><link rel="prefetch" href="/blog/assets/js/14.18ea2b4a.js"><link rel="prefetch" href="/blog/assets/js/15.0fa6dd02.js"><link rel="prefetch" href="/blog/assets/js/16.9e460296.js"><link rel="prefetch" href="/blog/assets/js/17.b9cb101b.js"><link rel="prefetch" href="/blog/assets/js/18.28d9910c.js"><link rel="prefetch" href="/blog/assets/js/19.f7b52cbf.js"><link rel="prefetch" href="/blog/assets/js/2.a0d30d10.js"><link rel="prefetch" href="/blog/assets/js/21.26bafb40.js"><link rel="prefetch" href="/blog/assets/js/22.fd6c09c8.js"><link rel="prefetch" href="/blog/assets/js/23.9f66f59e.js"><link rel="prefetch" href="/blog/assets/js/24.ab1524af.js"><link rel="prefetch" href="/blog/assets/js/25.ea864548.js"><link rel="prefetch" href="/blog/assets/js/26.3e1c0ad1.js"><link rel="prefetch" href="/blog/assets/js/27.55ed91c5.js"><link rel="prefetch" href="/blog/assets/js/28.480680ff.js"><link rel="prefetch" href="/blog/assets/js/29.7aad078f.js"><link rel="prefetch" href="/blog/assets/js/3.990610ac.js"><link rel="prefetch" href="/blog/assets/js/30.008bbfb8.js"><link rel="prefetch" href="/blog/assets/js/31.20c4ae0b.js"><link rel="prefetch" href="/blog/assets/js/32.4f22f2e7.js"><link rel="prefetch" href="/blog/assets/js/33.39e8f1e5.js"><link rel="prefetch" href="/blog/assets/js/34.42f728a9.js"><link rel="prefetch" href="/blog/assets/js/35.b5848e23.js"><link rel="prefetch" href="/blog/assets/js/36.09cf9e42.js"><link rel="prefetch" href="/blog/assets/js/37.74ea5ada.js"><link rel="prefetch" href="/blog/assets/js/38.4682166f.js"><link rel="prefetch" href="/blog/assets/js/39.be71f4d3.js"><link rel="prefetch" href="/blog/assets/js/40.aa9cbdb7.js"><link rel="prefetch" href="/blog/assets/js/41.032eeb0b.js"><link rel="prefetch" href="/blog/assets/js/42.e62bc6a1.js"><link rel="prefetch" href="/blog/assets/js/43.5914107a.js"><link rel="prefetch" href="/blog/assets/js/44.20853e89.js"><link rel="prefetch" href="/blog/assets/js/45.118cdb8c.js"><link rel="prefetch" href="/blog/assets/js/46.defdf29f.js"><link rel="prefetch" href="/blog/assets/js/47.deffddcb.js"><link rel="prefetch" href="/blog/assets/js/48.c396a03c.js"><link rel="prefetch" href="/blog/assets/js/49.32e882e5.js"><link rel="prefetch" href="/blog/assets/js/5.5df4941a.js"><link rel="prefetch" href="/blog/assets/js/50.c801fa32.js"><link rel="prefetch" href="/blog/assets/js/51.9d503386.js"><link rel="prefetch" href="/blog/assets/js/52.9393497a.js"><link rel="prefetch" href="/blog/assets/js/53.1e91c8e5.js"><link rel="prefetch" href="/blog/assets/js/54.ee126aa1.js"><link rel="prefetch" href="/blog/assets/js/55.0e378054.js"><link rel="prefetch" href="/blog/assets/js/56.e75b6606.js"><link rel="prefetch" href="/blog/assets/js/57.36fcd061.js"><link rel="prefetch" href="/blog/assets/js/58.21ad8203.js"><link rel="prefetch" href="/blog/assets/js/59.b1915bb8.js"><link rel="prefetch" href="/blog/assets/js/6.7936e3be.js"><link rel="prefetch" href="/blog/assets/js/60.49e40d59.js"><link rel="prefetch" href="/blog/assets/js/61.1f074fba.js"><link rel="prefetch" href="/blog/assets/js/62.aa1d521e.js"><link rel="prefetch" href="/blog/assets/js/63.f5f93d85.js"><link rel="prefetch" href="/blog/assets/js/64.5aaec99e.js"><link rel="prefetch" href="/blog/assets/js/65.fe1695ca.js"><link rel="prefetch" href="/blog/assets/js/66.ee6255cf.js"><link rel="prefetch" href="/blog/assets/js/67.3f52b499.js"><link rel="prefetch" href="/blog/assets/js/68.dc7b44ff.js"><link rel="prefetch" href="/blog/assets/js/69.a2217a0e.js"><link rel="prefetch" href="/blog/assets/js/7.4e0c1773.js"><link rel="prefetch" href="/blog/assets/js/70.556d3165.js"><link rel="prefetch" href="/blog/assets/js/71.f53e75e5.js"><link rel="prefetch" href="/blog/assets/js/72.d39d12a0.js"><link rel="prefetch" href="/blog/assets/js/73.49fee442.js"><link rel="prefetch" href="/blog/assets/js/74.f2db042a.js"><link rel="prefetch" href="/blog/assets/js/75.b819095b.js"><link rel="prefetch" href="/blog/assets/js/76.e1c5beb2.js"><link rel="prefetch" href="/blog/assets/js/77.2d497722.js"><link rel="prefetch" href="/blog/assets/js/78.68cb6aba.js"><link rel="prefetch" href="/blog/assets/js/79.80d167c0.js"><link rel="prefetch" href="/blog/assets/js/8.5adcc47d.js"><link rel="prefetch" href="/blog/assets/js/80.32de3c75.js"><link rel="prefetch" href="/blog/assets/js/81.40901aa0.js"><link rel="prefetch" href="/blog/assets/js/82.4b927279.js"><link rel="prefetch" href="/blog/assets/js/83.942f647c.js"><link rel="prefetch" href="/blog/assets/js/84.71f22afb.js"><link rel="prefetch" href="/blog/assets/js/85.c72c3daf.js"><link rel="prefetch" href="/blog/assets/js/86.e96f4d0c.js"><link rel="prefetch" href="/blog/assets/js/87.39b566ea.js"><link rel="prefetch" href="/blog/assets/js/88.15a9a1dd.js"><link rel="prefetch" href="/blog/assets/js/89.2979bc8f.js"><link rel="prefetch" href="/blog/assets/js/9.a31df12a.js"><link rel="prefetch" href="/blog/assets/js/90.3a9d4644.js"><link rel="prefetch" href="/blog/assets/js/91.5df7c71e.js"><link rel="prefetch" href="/blog/assets/js/92.9fcc8eb5.js"><link rel="prefetch" href="/blog/assets/js/93.e080fdfc.js"><link rel="prefetch" href="/blog/assets/js/94.eb88f6af.js"><link rel="prefetch" href="/blog/assets/js/95.efc8f3f7.js"><link rel="prefetch" href="/blog/assets/js/96.c07fd09c.js"><link rel="prefetch" href="/blog/assets/js/97.bfddcafb.js"><link rel="prefetch" href="/blog/assets/js/98.ea1835fb.js"><link rel="prefetch" href="/blog/assets/js/99.c09b49ce.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.7b14dd56.css">
+  </head>
+  <body class="theme-mode-light">
+    <div id="app" data-server-rendered="true"><div class="theme-container sidebar-open have-rightmenu"><header class="navbar blur"><div title="目录" class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="/blog/img/logo.png" alt="梵一的博客" class="logo"> <span class="site-name can-hide">梵一的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><a href="/blog/db/" class="link-title">数据库</a> <span class="title" style="display:none;">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>ELK相关文档</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/843f56/" class="nav-link">ES相关知识点整理</a></li><li class="dropdown-subitem"><a href="/blog/pages/8d99ee/" aria-current="page" class="nav-link router-link-exact-active router-link-active">ES_API集合</a></li><li class="dropdown-subitem"><a href="/blog/pages/2f7a8b/" class="nav-link">ES_常见问题列表</a></li><li class="dropdown-subitem"><a href="/blog/pages/b3f7e8/" class="nav-link">ECE知识点总结</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><a href="/blog/code/" class="link-title">编程</a> <span class="title" style="display:none;">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pages/a15a5a/" class="nav-link">Python基础知识点</a></li><li class="dropdown-item"><!----> <a href="/blog/pages/98f6c7/" class="nav-link">《数据结构与算法之美》读书笔记</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/blog/midware/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Kubernetes</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/cea09f/" class="nav-link">K8S基础知识点整理</a></li><li class="dropdown-subitem"><a href="/blog/pages/5cdc7e/" class="nav-link">华为CKA认证</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><a href="/blog/life/" class="link-title">生活</a> <span class="title" style="display:none;">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>读书笔记</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/8a0e8c/" class="nav-link">《原子习惯》读书笔记</a></li><li class="dropdown-subitem"><a href="/blog/pages/e5d8ed/" class="nav-link">《暗时间》读书笔记</a></li><li class="dropdown-subitem"><a href="/blog/pages/3a1429/" class="nav-link">《大脑强人》读书笔记</a></li><li class="dropdown-subitem"><a href="/blog/pages/485aeb/" class="nav-link">《直线学习法》读书笔记</a></li></ul></li><li class="dropdown-item"><h4>周记</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/06b1b1/" class="nav-link">2022年</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/blog/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/blog/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/blog/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/blog/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/chuck6/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar-hover-trigger"></div> <aside class="sidebar" style="display:none;"><div class="blogger"><img src="/blog/img/paizhao.jpg"> <div class="blogger-info"><h3>梵一的世界</h3> <span>等风来</span></div></div> <nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><a href="/blog/db/" class="link-title">数据库</a> <span class="title" style="display:none;">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>ELK相关文档</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/843f56/" class="nav-link">ES相关知识点整理</a></li><li class="dropdown-subitem"><a href="/blog/pages/8d99ee/" aria-current="page" class="nav-link router-link-exact-active router-link-active">ES_API集合</a></li><li class="dropdown-subitem"><a href="/blog/pages/2f7a8b/" class="nav-link">ES_常见问题列表</a></li><li class="dropdown-subitem"><a href="/blog/pages/b3f7e8/" class="nav-link">ECE知识点总结</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程" class="dropdown-title"><a href="/blog/code/" class="link-title">编程</a> <span class="title" style="display:none;">编程</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/pages/a15a5a/" class="nav-link">Python基础知识点</a></li><li class="dropdown-item"><!----> <a href="/blog/pages/98f6c7/" class="nav-link">《数据结构与算法之美》读书笔记</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><a href="/blog/midware/" class="link-title">技术</a> <span class="title" style="display:none;">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Kubernetes</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/cea09f/" class="nav-link">K8S基础知识点整理</a></li><li class="dropdown-subitem"><a href="/blog/pages/5cdc7e/" class="nav-link">华为CKA认证</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="生活" class="dropdown-title"><a href="/blog/life/" class="link-title">生活</a> <span class="title" style="display:none;">生活</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>读书笔记</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/8a0e8c/" class="nav-link">《原子习惯》读书笔记</a></li><li class="dropdown-subitem"><a href="/blog/pages/e5d8ed/" class="nav-link">《暗时间》读书笔记</a></li><li class="dropdown-subitem"><a href="/blog/pages/3a1429/" class="nav-link">《大脑强人》读书笔记</a></li><li class="dropdown-subitem"><a href="/blog/pages/485aeb/" class="nav-link">《直线学习法》读书笔记</a></li></ul></li><li class="dropdown-item"><h4>周记</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/pages/06b1b1/" class="nav-link">2022年</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/blog/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="/blog/pages/beb6c0bd8a66cea6/" class="nav-link">收藏</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="索引" class="dropdown-title"><a href="/blog/archives/" class="link-title">索引</a> <span class="title" style="display:none;">索引</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/categories/" class="nav-link">分类</a></li><li class="dropdown-item"><!----> <a href="/blog/tags/" class="nav-link">标签</a></li><li class="dropdown-item"><!----> <a href="/blog/archives/" class="nav-link">归档</a></li></ul></div></div> <a href="https://github.com/chuck6/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>ELK</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/pages/843f56/" class="sidebar-link">ES相关知识点整理</a></li><li><a href="/blog/pages/127f0c/" class="sidebar-link">ES架构规划</a></li><li><a href="/blog/pages/8d99ee/" aria-current="page" class="active sidebar-link">ES_API集合</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#查看集群的健康状况" class="sidebar-link">查看集群的健康状况</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#查看所有index" class="sidebar-link">查看所有index</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#查看索引的mapping和setting设置" class="sidebar-link">查看索引的mapping和setting设置</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#查看索引中文档的总数" class="sidebar-link">查看索引中文档的总数</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#查看前10条文档" class="sidebar-link">查看前10条文档</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#显式mapping设置" class="sidebar-link">显式mapping设置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#自定义mapping的建议" class="sidebar-link">自定义mapping的建议</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#控制当前字段是否被索引" class="sidebar-link">控制当前字段是否被索引</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#控制倒排索引记录的内容" class="sidebar-link">控制倒排索引记录的内容</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#实现对null值进行搜索" class="sidebar-link">实现对NULL值进行搜索</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#copy-to设置" class="sidebar-link">copy_to设置</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#数组类型" class="sidebar-link">数组类型</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#定义index-alias" class="sidebar-link">定义Index Alias</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#常见错误返回" class="sidebar-link">常见错误返回</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#analyzer-api" class="sidebar-link">_analyzer API</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#create-一个文档" class="sidebar-link">Create 一个文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#index的方法与create方法" class="sidebar-link">Index的方法与create方法</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#read一个文档" class="sidebar-link">Read一个文档</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#update一个文档" class="sidebar-link">Update一个文档</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#delete一个文档" class="sidebar-link">Delete一个文档</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#bulk-api" class="sidebar-link">Bulk API</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#mget批量读取" class="sidebar-link">mget批量读取</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#msearch-批量查询" class="sidebar-link">msearch 批量查询</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#mget与msearch的区别" class="sidebar-link">mget与msearch的区别</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#单次批量操作注意事项" class="sidebar-link">单次批量操作注意事项</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#search-api" class="sidebar-link">Search API</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#uri-search" class="sidebar-link">URI Search</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#uri-search基本查询" class="sidebar-link">URI Search基本查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#uri-search指定字段查询" class="sidebar-link">URI Search指定字段查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#uri-search泛查询" class="sidebar-link">URI Search泛查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#uri-search-term查询" class="sidebar-link">URI Search Term查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#uri-search-phrase查询" class="sidebar-link">URI Search Phrase查询</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#request-body-search" class="sidebar-link">Request Body Search</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#分页查询" class="sidebar-link">分页查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#排序" class="sidebar-link">排序</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#source字段过滤" class="sidebar-link">source字段过滤</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#脚本字段" class="sidebar-link">脚本字段</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#全文查询" class="sidebar-link">全文查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#精确值查询" class="sidebar-link">精确值查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#range" class="sidebar-link">Range</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#exists查询" class="sidebar-link">exists查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#bool查询" class="sidebar-link">bool查询</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#boosting-query" class="sidebar-link">Boosting Query</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#disjunction-max-query" class="sidebar-link">Disjunction Max Query</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#multi-match" class="sidebar-link">Multi Match</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#高亮显示" class="sidebar-link">高亮显示</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#search-template" class="sidebar-link">Search Template</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#suggester-api" class="sidebar-link">Suggester API</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#term-suggester" class="sidebar-link">Term Suggester</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#missing-mode" class="sidebar-link">Missing Mode</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#popular-mode" class="sidebar-link">Popular Mode</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#always-mode" class="sidebar-link">Always Mode</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#phrase-suggester" class="sidebar-link">Phrase Suggester</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#completion-suggester" class="sidebar-link">Completion Suggester</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#使用自动补全suggester步骤" class="sidebar-link">使用自动补全suggester步骤</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#context-suggester" class="sidebar-link">Context Suggester</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#实现上下文suggester" class="sidebar-link">实现上下文suggester</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#metric-aggregation" class="sidebar-link">Metric Aggregation</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#bucket-aggregation" class="sidebar-link">Bucket Aggregation</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#terms-aggregation" class="sidebar-link">Terms Aggregation</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#cardinality" class="sidebar-link">Cardinality</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#指定size分桶" class="sidebar-link">指定SIZE分桶</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#嵌套聚合" class="sidebar-link">嵌套聚合</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#优化terms聚合性能" class="sidebar-link">优化terms聚合性能</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#range-聚合" class="sidebar-link">Range 聚合</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#histogram聚合" class="sidebar-link">Histogram聚合</a></li></ul></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#pipeline-聚合分析" class="sidebar-link">Pipeline 聚合分析</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#sibling-pipeline" class="sidebar-link">Sibling Pipeline</a></li><li class="sidebar-sub-header"><a href="/blog/pages/8d99ee/#parent-pipeline" class="sidebar-link">Parent Pipeline</a></li></ul></li></ul></li><li><a href="/blog/pages/2f7a8b/" class="sidebar-link">ES_常见问题列表</a></li><li><a href="/blog/pages/42d30d/" class="sidebar-link">ECE认证考试经历总结</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Prometheus</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div><main class="page"><div class="theme-vdoing-wrapper "><div class="articleInfo-wrap" data-v-0c557b5e><div class="articleInfo" data-v-0c557b5e><ul class="breadcrumbs" data-v-0c557b5e><li data-v-0c557b5e><a href="/blog/" title="首页" class="iconfont icon-home router-link-active" data-v-0c557b5e></a></li> <li data-v-0c557b5e><a href="/blog/db/#数据库" data-v-0c557b5e>数据库</a></li><li data-v-0c557b5e><a href="/blog/db/#ELK" data-v-0c557b5e>ELK</a></li></ul> <div class="info" data-v-0c557b5e><div title="作者" class="author iconfont icon-touxiang" data-v-0c557b5e><a href="https://github.com/chuck6" target="_blank" title="作者" class="beLink" data-v-0c557b5e>chuck</a></div> <div title="创建时间" class="date iconfont icon-riqi" data-v-0c557b5e><a href="javascript:;" data-v-0c557b5e>2022-01-20</a></div> <!----></div></div></div> <!----> <div class="content-wrapper"><div class="right-menu-wrapper"><div class="right-menu-margin"><div class="right-menu-content"></div></div></div> <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABKFJREFUSA3tVl1oFVcQnrMbrak3QUgkya1akpJYcrUtIqW1JvFBE9LiQ5v6JmJpolbMg32rVrhgoYK0QiMY6i9Y6EMaW5D+xFJaTYItIuK2Kr3+BJNwkxBj05sQY3b3nM6cs2dv9t7NT/vQJw/sndk5M/PNzJkzewGerP+pAmy+ON8lLzUJgA8ZYxYIYZmGYRnctDaWvJJAmTtfP1pvXsBCCPP8QFcCaRkZYACgDZFO4stNIcBCajEOlmmC9XpJ9bAGCaPaPmzPl32dvLSVu3BWCTQs0XQQ6g0DYgwLIoAZbBCdW/i+781o1VVlm/410mw4h06Y7bIPHNyWDyL4FHkX03Q8SrzNhZTZriieckWt7cL6MM85YcLpsi/7O9/iXFT6MswI0DmmpkSaJ0qLxFIm3+i1THHB3zmBH3PYx9CcykcLOeQVVa7QtdxTgQgEleX2AjHYfwA+2ddV77ruGoJUbhGDI09YSNXyMpUt5ylOzxgbUmtOp7NmbNt8v3arjTBfYELmLUV+M+nSawNNAUqpT3ClJWg5I3BLT+cGW/DXNGCa6tx1aakCGEigArTn4TDIPdrXXYKCZNrHLMCOEPvHBlLQ99s9eHB7EB6NTki73CVPQ2F5MSx/uRQixfmq7rK0wYD8w8E905bnPDfwoWs/rfv93NWN/ZfvwsLIU7A09gxECyISeGJkHAau98L97tuw7NXnoPyNF8FcYGLGKsOs0mN3OEyec9esGW/ZEl945dTP34wlR2FZVQWU1q0Cw8Tr7p+hgLLNL0FPxx/Q35mA8aEUrH6nCgwEl0tn7wUiZYJnNRh6DK4UH/k0lfyrsBKdPVv/AriGIQcEDQZ65LBAGe2Rzui9Ybjz7XUppz1/uKBbyVPGkN3ZAeC6hr0x7Nr38N5+EqkoOm17xpoqR9ohQF55ERSvr4Dkr3chNfC3DMzGJlNBElW8w9nsGQvhNGIzDkXzCg8cLK951xHsFBlTJspJNi3ZFIMF2AeDV3q8DNOB+YHi6QTrChDIWDBRi5U5f+ZMfJLu3ccrqxtdxk4SKH336LFxSmkqefwU5T8fhdSdQf9IVKD6aNiwI/hnmcAZ91isYMJIaCUCx9W098+LgruikeTqzqqxKPUwqJyCPJiyemVVZBOijDGjD38Os0jOiSPL1z3SPjXNANbiNPXAdzTfukjjuknNBbyz3nwgTd3AVFqUJ5hpHlq9MveLnWwttUfoygBmvVjuikxND3znrhsELnZk7k+OjIGxeNEkomyLVta0xxn+HZhjBc4YZ/AFjHjz9u3xRZl2BN4aq9nFwWh16IrQ1aHHEd3j1+4/dB9OtH4e29A2H1DyHQRmOSfQZ1Fy7MHBTGB6J/Djq6p3OxyO2cB+4Car7v/o3GXgfAkj23+x9ID1Teoamo/SXcbvSf2PX7Vc8DdCmE1vN9di+32P9/5YR3vLnhCVGUWBjEkr3yh4H8v9CzmsbdhzOKzsJKM90iFdaTMjRPhGVsakRvOaRidljo6H6G7j+ctrJpsP+4COhDIl0La2+FS4+5mlocBaXY5QnGZysIBYoeSsl5qQzrSj/cgNrfuEzlWBfwA+EjrZyWUvpAAAAABJRU5ErkJggg==">ES_API集合<span class="title-tag">原创</span></h1>  <div class="theme-vdoing-content content__default"><h1 id="基本的api"><a href="#基本的api" class="header-anchor">#</a> 基本的API</h1> <h2 id="查看集群的健康状况"><a href="#查看集群的健康状况" class="header-anchor">#</a> 查看集群的健康状况</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET _cluster/health
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>当颜色为green，主分片与副本都正常分配；当颜色为Yellow，主分片全部正常分配，有副本分片未能正常分配；当颜色为Red，有主分片未能分配。</p> <h2 id="查看所有index"><a href="#查看所有index" class="header-anchor">#</a> 查看所有index</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET -cat/indices
+#查看indices
+GET /_cat/indices/kibana*?v&amp;s=index
+#查看状态为绿的索引
+GET /_cat/indices?v&amp;health=green
+#按照文档个数排序
+GET /_cat/indices?v&amp;s=docs.count:desc
+#查看具体的字段
+GET /_cat/indices/kibana*?pri&amp;v&amp;h=health,index,pri,rep,docs.count,mt
+#How much memory is used per index?
+GET /_cat/indices?v&amp;h=i,tm&amp;s=tm:desc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="查看索引的mapping和setting设置"><a href="#查看索引的mapping和setting设置" class="header-anchor">#</a> 查看索引的mapping和setting设置</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET kibana_sample_data_ecommerce
+#单独看mapping
+GET mapping_test/_mapping
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="查看索引中文档的总数"><a href="#查看索引中文档的总数" class="header-anchor">#</a> 查看索引中文档的总数</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET kibana_sample_data_ecommerce/_count
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="查看前10条文档"><a href="#查看前10条文档" class="header-anchor">#</a> 查看前10条文档</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST kibana_sample_data_ecommerce/_search
+{
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="显式mapping设置"><a href="#显式mapping设置" class="header-anchor">#</a> 显式mapping设置</h2> <h3 id="自定义mapping的建议"><a href="#自定义mapping的建议" class="header-anchor">#</a> 自定义mapping的建议</h3> <ul><li>可以参考API手册，纯手写</li> <li>为了减少输入的工作量，减少出错概率，可以依照以下步骤
+<ul><li>创建一个临时的index，写入一些样本数据</li> <li>通过访问mapping api获得该临时文件的动态mapping定义</li> <li>修改后用该配置创建我们需要的索引</li> <li>删除临时索引</li></ul></li></ul> <h3 id="控制当前字段是否被索引"><a href="#控制当前字段是否被索引" class="header-anchor">#</a> 控制当前字段是否被索引</h3> <p>mapping中的index字段是用来控制当前字段是否被索引。默认为true，如果设置成false，该字段不可被索引。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>PUT users
+{
+    &quot;mappings&quot; : {
+      &quot;properties&quot; : {
+        &quot;firstName&quot; : {
+          &quot;type&quot; : &quot;text&quot;
+        },
+        &quot;lastName&quot; : {
+          &quot;type&quot; : &quot;text&quot;
+        },
+        &quot;mobile&quot; : {
+          &quot;type&quot; : &quot;text&quot;,
+          &quot;index&quot;: false
+        }
+      }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="控制倒排索引记录的内容"><a href="#控制倒排索引记录的内容" class="header-anchor">#</a> 控制倒排索引记录的内容</h3> <p>mapping中的index options字段，有四种不同级别的设置，用来控制倒排索引记录的内容</p> <ul><li>docs 记录doc id</li> <li>freqs 记录doc id和term frequencies</li> <li>positions 记录doc id / term frequenies / term position</li> <li>offsets 记录doc id / term frequenies / term position / character offects</li></ul> <p>Text类型默认记录positions，其他默认为docs</p> <p>记录内容越多，占用存储空间越大</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>PUT users
+{
+    &quot;mappings&quot; : {
+      &quot;properties&quot; : {
+        &quot;firstName&quot; : {
+          &quot;type&quot; : &quot;text&quot;
+        },
+        &quot;lastName&quot; : {
+          &quot;type&quot; : &quot;text&quot;
+        },
+        &quot;mobile&quot; : {
+          &quot;type&quot; : &quot;text&quot;,
+          &quot;index_options&quot;: &quot;offsets&quot;
+        }
+      }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="实现对null值进行搜索"><a href="#实现对null值进行搜索" class="header-anchor">#</a> 实现对NULL值进行搜索</h3> <p>mapping设置中，可以设置某个字段，&quot;null_value&quot;:&quot;NULL&quot;，这样的话，就能实现对NULL值实现搜索。</p> <p>注意的是，只有keyword类型支持设定 null_value</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>PUT users
+{
+    &quot;mappings&quot; : {
+      &quot;properties&quot; : {
+        &quot;firstName&quot; : {
+          &quot;type&quot; : &quot;text&quot;
+        },
+        &quot;lastName&quot; : {
+          &quot;type&quot; : &quot;text&quot;
+        },
+        &quot;mobile&quot; : {
+          &quot;type&quot; : &quot;keyword&quot;,
+          &quot;null_value&quot;: &quot;NULL&quot;
+        }
+
+      }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="copy-to设置"><a href="#copy-to设置" class="header-anchor">#</a> copy_to设置</h3> <p>可以满足一些场景，这个场景是输入的查询的字段的值，是已有的各个字段的结合的场景。例如输入的fullname的值，要匹配到mapping中的firstname和lastname。</p> <ul><li>_all在7中被copy_to所替代</li> <li>满足一些特定的搜索需求</li> <li>copy_to将字段的数值拷贝到目标字段，实现类似_all的作用</li> <li>copy_to的目标字段不出现在_source中</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>PUT users
+{
+  &quot;mappings&quot;: {
+    &quot;properties&quot;: {
+      &quot;firstName&quot;:{
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;copy_to&quot;: &quot;fullName&quot;
+      },
+      &quot;lastName&quot;:{
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;copy_to&quot;: &quot;fullName&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h3 id="数组类型"><a href="#数组类型" class="header-anchor">#</a> 数组类型</h3> <p>es中不提供专门的数组类型。但是任何字段，都可以包含多个相同类型的数值。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>PUT users/_doc/1
+{
+  &quot;name&quot;:&quot;twobirds&quot;,
+  &quot;interests&quot;:[&quot;reading&quot;,&quot;music&quot;]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="定义index-alias"><a href="#定义index-alias" class="header-anchor">#</a> 定义Index Alias</h2> <p>通过设置索引的别名，是的零停机运维。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST _aliases
+{
+  &quot;actions&quot;: [
+    {
+      &quot;add&quot;: {
+        &quot;index&quot;: &quot;movies-2019&quot;,
+        &quot;alias&quot;: &quot;movies-latest&quot;
+      }
+    }
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>设置alias创建不同查询的视图</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST _aliases
+{
+  &quot;actions&quot;: [
+    {
+      &quot;add&quot;: {
+        &quot;index&quot;: &quot;movies-2019&quot;,
+        &quot;alias&quot;: &quot;movies-lastest-highrate&quot;,
+        &quot;filter&quot;: {
+          &quot;range&quot;: {
+            &quot;rating&quot;: {
+              &quot;gte&quot;: 4
+            }
+          }
+        }
+      }
+    }
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h2 id="常见错误返回"><a href="#常见错误返回" class="header-anchor">#</a> 常见错误返回</h2> <table><thead><tr><th>问题</th> <th>原因</th></tr></thead> <tbody><tr><td>无法连接</td> <td>网络故障或集群挂了</td></tr> <tr><td>连接无法关闭</td> <td>网络故障或节点出错</td></tr> <tr><td>429</td> <td>集群过于繁忙</td></tr> <tr><td>4XX</td> <td>请求体格式有错</td></tr> <tr><td>500</td> <td>集群内部错误</td></tr></tbody></table> <h2 id="analyzer-api"><a href="#analyzer-api" class="header-anchor">#</a> _analyzer API</h2> <p>analyzer api是ES自带的API，目的是用来分析和测试研究ES如何进行分词的。有如下三种使用的方式：</p> <p>第一种方式：通过GET直接指定Analyzer来进行测试</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /_analyze
+{
+  &quot;analyzer&quot;: &quot;standard&quot;
+  &quot;text&quot;: &quot;Mastering Elasticsearch, elasticsearch is Action&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>第二种方式：通过POST索引名上的某个字段来进行测试</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST books/_analyze
+{
+  &quot;field&quot;: &quot;title&quot;,
+  &quot;text&quot;: &quot;Mastering Elasticsearch&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>第三种方式：通过POST自定义分词器来进行测试</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST /_analyze
+{
+  &quot;tokenizer&quot;: &quot;standard&quot;,
+  &quot;filter&quot;: [&quot;lowercase&quot;],
+  &quot;text&quot;: &quot;Mastering Elasticsearch&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="create-一个文档"><a href="#create-一个文档" class="header-anchor">#</a> Create 一个文档</h2> <h3 id="index的方法与create方法"><a href="#index的方法与create方法" class="header-anchor">#</a> Index的方法与create方法</h3> <h4 id="index方法与create方法的联系"><a href="#index方法与create方法的联系" class="header-anchor">#</a> index方法与create方法的联系</h4> <p>都可以用于创建一个新的文档</p> <h4 id="index方法与create方法的区别"><a href="#index方法与create方法的区别" class="header-anchor">#</a> index方法与create方法的区别</h4> <p>put和post上面的区别</p> <ul><li>index只有put方法，并且一定要带上文档id</li> <li>create可以使用put 或post</li></ul> <p>是否需要指定文档id</p> <ul><li>需要指定文档id，只能用PUT</li> <li>不指定文档id的情况下，只能用POST</li></ul> <p>对待已经存在文档id的情况(指定了文档ID，只能用PUT)</p> <ul><li>index方法中，如果文档的ID不存在，那么久创建新的文档。否则会先删除现有的文档，再创建新的文档，版本会增加。</li> <li>create方法中，如果文档的ID已经存在，会创建失败。</li></ul> <p>是否想要自动生成文档id的情况</p> <ul><li>index方法无法自动生成文档id</li> <li>create方法可以自动生成文档id</li></ul> <h4 id="index方法的api-只有put"><a href="#index方法的api-只有put" class="header-anchor">#</a> index方法的API(只有PUT)</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>PUT my_index/_doc/1
+{
+    &quot;user&quot; : &quot;Jack&quot;,
+    &quot;post_date&quot; : &quot;2019-05-15T14:12:12&quot;,
+    &quot;message&quot; : &quot;trying out Elasticsearch&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h4 id="create方法的api-put带上文档id"><a href="#create方法的api-put带上文档id" class="header-anchor">#</a> create方法的API(PUT带上文档ID)</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>PUT my_index/_create/1
+{
+    &quot;user&quot; : &quot;Jack&quot;,
+    &quot;post_date&quot; : &quot;2019-05-15T14:12:12&quot;,
+    &quot;message&quot; : &quot;trying out Elasticsearch&quot;
+}
+PUT users/_doc/1?op_type=create
+{
+    &quot;user&quot; : &quot;Jack&quot;,
+    &quot;post_date&quot; : &quot;2019-05-15T14:12:12&quot;,
+    &quot;message&quot; : &quot;trying out Elasticsearch&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h4 id="create方法的api-post不带上文档id"><a href="#create方法的api-post不带上文档id" class="header-anchor">#</a> create方法的API(POST不带上文档ID)</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST users/_doc
+{
+	&quot;user&quot; : &quot;Mike&quot;,
+    &quot;post_date&quot; : &quot;2019-04-15T14:12:12&quot;,
+    &quot;message&quot; : &quot;trying out Kibana&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="read一个文档"><a href="#read一个文档" class="header-anchor">#</a> Read一个文档</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET my_index/_doc/1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>找到文档，会返回HTTP 200；找不到文档，会返回HTTP 404</p> <h2 id="update一个文档"><a href="#update一个文档" class="header-anchor">#</a> Update一个文档</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>#Update 指定 ID  (先删除，在写入)
+#文档必须已经存在，更新只会对相应字段做增量修改
+#POST方法中，payload需要包含在&quot;doc&quot;中
+POST users/_update/1
+{
+	&quot;doc&quot;:
+	{
+	  &quot;user&quot; : &quot;user1&quot;,
+      &quot;post_date&quot; : &quot;2019-04-15T14:12:12&quot;,
+      &quot;message&quot; : &quot;trying out Kibanadddddd&quot;
+	}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="delete一个文档"><a href="#delete一个文档" class="header-anchor">#</a> Delete一个文档</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>### Delete by Id
+# 删除文档
+DELETE users/_doc/1
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h2 id="bulk-api"><a href="#bulk-api" class="header-anchor">#</a> Bulk API</h2> <ul><li>支持在一次API调用中，对不同的索引进行操作</li> <li>支持四种类型操作：index \ create \ update \ delete</li> <li>可以在URL中指定index，也可以在请求的payload中进行</li> <li>操作中单条操作失败，并不会影响其他操作</li> <li>返回结果包括了每一条操作执行的结果</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST _bulk
+{ &quot;index&quot; : { &quot;_index&quot; : &quot;test&quot;, &quot;_id&quot; : &quot;1&quot; } }
+{ &quot;field1&quot; : &quot;value1&quot; }
+{ &quot;delete&quot; : { &quot;_index&quot; : &quot;test&quot;, &quot;_id&quot; : &quot;2&quot; } }
+{ &quot;create&quot; : { &quot;_index&quot; : &quot;test2&quot;, &quot;_id&quot; : &quot;3&quot; } }
+{ &quot;field1&quot; : &quot;value3&quot; }
+{ &quot;update&quot; : {&quot;_id&quot; : &quot;1&quot;, &quot;_index&quot; : &quot;test&quot;} }
+{ &quot;doc&quot; : {&quot;field2&quot; : &quot;value2&quot;} }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>其中&quot;index&quot;/&quot;delete&quot;/&quot;create&quot;/&quot;update&quot;是CRUD中的CUD。</p> <p>&quot;filed1&quot;和&quot;filed2&quot;是相应的列名，后面跟的是value值。</p> <h2 id="mget批量读取"><a href="#mget批量读取" class="header-anchor">#</a> mget批量读取</h2> <p>批量操作，可以减少网络连接所产生的开销，提高性能</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>### mget 操作
+GET /_mget
+{
+    &quot;docs&quot; : [
+        {
+            &quot;_index&quot; : &quot;test&quot;,
+            &quot;_id&quot; : &quot;1&quot;
+        },
+        {
+            &quot;_index&quot; : &quot;test&quot;,
+            &quot;_id&quot; : &quot;2&quot;
+        }
+    ]
+}
+#URI中指定index
+GET /test/_mget
+{
+    &quot;docs&quot; : [
+        {
+
+            &quot;_id&quot; : &quot;1&quot;
+        },
+        {
+
+            &quot;_id&quot; : &quot;2&quot;
+        }
+    ]
+}
+GET /_mget
+{
+    &quot;docs&quot; : [
+        {
+            &quot;_index&quot; : &quot;test&quot;,
+            &quot;_id&quot; : &quot;1&quot;,
+            &quot;_source&quot; : false
+        },
+        {
+            &quot;_index&quot; : &quot;test&quot;,
+            &quot;_id&quot; : &quot;2&quot;,
+            &quot;_source&quot; : [&quot;field3&quot;, &quot;field4&quot;]
+        },
+        {
+            &quot;_index&quot; : &quot;test&quot;,
+            &quot;_id&quot; : &quot;3&quot;,
+            &quot;_source&quot; : {
+                &quot;include&quot;: [&quot;user&quot;],
+                &quot;exclude&quot;: [&quot;user.location&quot;]
+            }
+        }
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br></div></div><h2 id="msearch-批量查询"><a href="#msearch-批量查询" class="header-anchor">#</a> msearch 批量查询</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST kibana_sample_data_ecommerce/_msearch
+{}
+{&quot;query&quot; : {&quot;match_all&quot; : {}},&quot;size&quot;:1}
+{&quot;index&quot; : &quot;kibana_sample_data_flights&quot;}
+{&quot;query&quot; : {&quot;match_all&quot; : {}},&quot;size&quot;:2}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="mget与msearch的区别"><a href="#mget与msearch的区别" class="header-anchor">#</a> mget与msearch的区别</h3> <p>mget是通过文档ID列表得到文档信息，而msearch是根据查询条件，搜索到相应文档。</p> <h3 id="单次批量操作注意事项"><a href="#单次批量操作注意事项" class="header-anchor">#</a> 单次批量操作注意事项</h3> <p>单次批量操作，数据量不宜过大，以免引发性能问题。</p> <p>一般建议是1000-5000个文档，如果文档很大，可以适当减少队列，大小建议为5-15MB，默认不能超过100M，会报错。</p> <h2 id="search-api"><a href="#search-api" class="header-anchor">#</a> Search API</h2> <p>返回体中的字段意思</p> <table><thead><tr><th>took</th> <th>花费的时间</th></tr></thead> <tbody><tr><td>total</td> <td>符合条件的总文档数</td></tr> <tr><td>hints</td> <td>结果集，默认是前10个文档</td></tr> <tr><td>_index</td> <td>索引名</td></tr> <tr><td>_id</td> <td>文档的ID</td></tr> <tr><td>_score</td> <td>相关度评分</td></tr> <tr><td>_source</td> <td>文档原始信息</td></tr></tbody></table> <h2 id="uri-search"><a href="#uri-search" class="header-anchor">#</a> URI Search</h2> <p>也就是在URL中使用查询参数</p> <h3 id="uri-search基本查询"><a href="#uri-search基本查询" class="header-anchor">#</a> URI Search基本查询</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>#基本查询
+GET /movies/_search?q=2012&amp;df=title&amp;sort=year:desc&amp;from=0&amp;size=10&amp;timeout=1s
+{
+  &quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>q指定查询语句，使用Query String Syntax</li> <li>df默认字段，是指查询的字段filed，不指定时就是对所有字段</li> <li>Sort排序</li> <li>from 和size用于分页</li> <li>Profile可以查看查询是如何被执行的（查看使用了什么查询）</li></ul> <h3 id="uri-search指定字段查询"><a href="#uri-search指定字段查询" class="header-anchor">#</a> URI Search指定字段查询</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=2012&amp;df=title
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+#或者没有df字段，使用title:2012的方式
+GET /movies/_search?q=title:2012
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>就是查询title字段是2012的文档</p> <h3 id="uri-search泛查询"><a href="#uri-search泛查询" class="header-anchor">#</a> URI Search泛查询</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>#泛查询，正对_all,所有字段
+GET /movies/_search?q=2012
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="uri-search-term查询"><a href="#uri-search-term查询" class="header-anchor">#</a> URI Search Term查询</h3> <p>简而言之就是指定了term单词的查询，和上面指定了title是2012就是term query。和上面的指定字段查询类似</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=title:2012
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="uri-search-phrase查询"><a href="#uri-search-phrase查询" class="header-anchor">#</a> URI Search Phrase查询</h3> <p>也就是带多个单词，词组的查询。这里要考虑要引号和括号(分组)的不同含义。</p> <h4 id="不加引号和括号"><a href="#不加引号和括号" class="header-anchor">#</a> 不加引号和括号</h4> <p>例如查找美丽心灵的影片，使用q=title:Beautiful Mind，通过profile的查询过程可以看出使用的是BooleanQuery，等效于tile字段中包含Beatiful，其他字段(也包含title字段)。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=title:Beautiful Mind
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="加上引号"><a href="#加上引号" class="header-anchor">#</a> 加上引号</h4> <p>&quot;Beautiful Mind&quot;,等效于Beautiful AND Mind.这是PhraseQuery，在查询的时候要求这两个单词要同时出现，并且还要求前后的顺序保持一致。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#使用引号，Phrase查询
+GET /movies/_search?q=title:&quot;Beautiful Mind&quot;
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="加上括号"><a href="#加上括号" class="header-anchor">#</a> 加上括号</h4> <p>和前面不加上括号的相比，这是布尔查询，意思是在title字段中，或者出现Beautiful或者出现Mind，或者都可以出现。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#分组，Bool查询
+GET /movies/_search?q=title:(Beautiful Mind)
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="布尔操作"><a href="#布尔操作" class="header-anchor">#</a> 布尔操作</h4> <p>在单词之间加入AND/OR/NOT或者&amp;&amp; / || !</p> <p>必须要大写</p> <p>AND：意思是必须包含Beautiful和Mind，但是对之间的顺序没有要求</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 查找美丽心灵
+GET /movies/_search?q=title:(Beautiful AND Mind)
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>OR：意思是或者包含Beautiful，或者包含Mind，或者包含这两个，但是对这两个词的顺序没有要求</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=title:(Beautiful OR Mind)
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>NOT：意思是包含Beautiful，不包含Mind</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=title:(Beautiful NOT Mind)
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="分组"><a href="#分组" class="header-anchor">#</a> 分组</h4> <p>+：表示must，也就是一定要有，must后面跟的单词是必须要存在的。</p> <p>%2B：表示的是+的意思。</p> <p>-：表示must_not，也就是后面跟的单词一定要不存在。</p> <p>注意：</p> <p>单独使用+的时候，没有任何含义，和没有+一个意思。</p> <p>单独使用-的时候 ，是有意义的。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=title:(+Beautiful -Mind)
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="范围查询"><a href="#范围查询" class="header-anchor">#</a> 范围查询</h4> <p>区间表示：[]闭区间，{}开区间</p> <ul><li>year:{2019 TO 2018]</li> <li>year:[* TO 2018]</li> <li>year:[2002 TO 2018%7D  等同于[2002 TO 2018}</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=title:beautiful AND year:[2002 TO 2018]
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="算数符号"><a href="#算数符号" class="header-anchor">#</a> 算数符号</h4> <ul><li>year:&gt;2010</li> <li>year:(&gt;2010 &amp;&amp; &lt;=2018)</li> <li>year:(+&gt;2010 +&lt;=2018)</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=year:(&gt;2010 AND  &lt;=2018)
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="通配符查询"><a href="#通配符查询" class="header-anchor">#</a> 通配符查询</h4> <p>通配符查询(通配符查询效率低，占用内存大，不建议使用。特别是放在最前面)</p> <p>? 代表1个字符，* 代表0或多个字符</p> <ul><li>title:mi?d</li> <li>title:be*</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>#通配符查询
+GET /movies/_search?q=title:b*
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="模糊匹配"><a href="#模糊匹配" class="header-anchor">#</a> 模糊匹配</h4> <p>title:befutifl~1</p> <p>就是指当有单词输入错误的时候，做一个模糊的匹配</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=title:beautifl~1
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h4 id="近似匹配"><a href="#近似匹配" class="header-anchor">#</a> 近似匹配</h4> <p>当输入的多个单词的时候，不要求他们一定要保证相应的顺序出现，但是两个都必须存在。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET /movies/_search?q=title:&quot;Lord Rings&quot;~2
+{
+	&quot;profile&quot;:&quot;true&quot;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="request-body-search"><a href="#request-body-search" class="header-anchor">#</a> Request Body Search</h2> <p>使用的ES内置的，也就是说在查询体中带上JSON格式，使用特定的DSL的语言方法来查询，使用最为广泛。</p> <p>分页查询/排序/source过滤字段/脚本字段，这些配置都是在定义query的查询体的上面来定义的。</p> <h3 id="分页查询"><a href="#分页查询" class="header-anchor">#</a> 分页查询</h3> <p>在不添加任何&quot;from&quot;和&quot;size&quot;的时候，from默认是从0开始，size是10。也就是从每个主分片上捞取from+size的数据汇聚，然后捞取前10条数据返回。</p> <p>&quot;from&quot;的意思就是定义了要查询数据的起始位置，如果from是10，那么就是说从第10条开始数据返回。</p> <p>&quot;size&quot;的意思是起始位置开始要返回的数据量的大小，如果size是10，那么就要从from的起始位置开始，返回10条数据。</p> <p>获取靠后的翻页成本较高。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST /kibana_sample_data_ecommerce/_search
+{
+  &quot;from&quot;:10,
+  &quot;size&quot;:20,
+  &quot;query&quot;:{
+    &quot;match_all&quot;: {}
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="排序"><a href="#排序" class="header-anchor">#</a> 排序</h3> <p>最好在&quot;数字型&quot;与&quot;日期型&quot;字段上排序</p> <p>因为对于多值类型或分析过的字段排序，系统会选一个值，无法得知该值。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#对日期排序
+POST kibana_sample_data_ecommerce/_search
+{
+  &quot;sort&quot;:[{&quot;order_date&quot;:&quot;desc&quot;}],
+  &quot;query&quot;:{
+    &quot;match_all&quot;: {}
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="source字段过滤"><a href="#source字段过滤" class="header-anchor">#</a> source字段过滤</h3> <p>就是针对查询出来的结果过滤到相应的字段的查询。</p> <p>如果_source没有存储，那就只返回匹配的文档的元数据</p> <p>_source支持使用通配符，例如_source[&quot;name*&quot;,&quot;desc*&quot;]</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#source filtering
+POST kibana_sample_data_ecommerce/_search
+{
+  &quot;_source&quot;:[&quot;order_date&quot;],
+  &quot;query&quot;:{
+    &quot;match_all&quot;: {}
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="脚本字段"><a href="#脚本字段" class="header-anchor">#</a> 脚本字段</h3> <p>针对于当订单中有不同的汇率，需要结合汇率对订单价格进行排序的情况。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET kibana_sample_data_ecommerce/_search
+{
+  &quot;script_fields&quot;: {
+    &quot;new_field&quot;: {
+      &quot;script&quot;: {
+        &quot;lang&quot;: &quot;painless&quot;,
+        &quot;source&quot;: &quot;doc['order_date'].value+'hello'&quot;
+      }
+    }
+  },
+  &quot;query&quot;: {
+    &quot;match_all&quot;: {}
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="全文查询"><a href="#全文查询" class="header-anchor">#</a> 全文查询</h3> <h4 id="match-all的查询"><a href="#match-all的查询" class="header-anchor">#</a> match_all的查询</h4> <p>在query下面使用match_all来查询，默认返回10条数据。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#ignore_unavailable=true，可以忽略尝试访问不存在的索引“404_idx”导致的报错
+#查询movies分页
+POST /movies,404_idx/_search?ignore_unavailable=true
+{
+  &quot;profile&quot;: true,
+	&quot;query&quot;: {
+		&quot;match_all&quot;: {}
+	}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h4 id="match的查询"><a href="#match的查询" class="header-anchor">#</a> match的查询</h4> <p>查询单个单词的时候像是URI Search中的term search，如果查询多个单词的时候又有点像URI Search中的phrase search。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#使用查询表达式 match，默认是OR的方式
+POST movies/_search
+{
+  &quot;query&quot;: {
+    &quot;match&quot;: {
+      &quot;title&quot;: &quot;last christmas&quot;
+    }
+  }
+}
+可以使用AND的方式
+POST movies/_search
+{
+  &quot;query&quot;: {
+    &quot;match&quot;: {
+      &quot;title&quot;: {
+        &quot;query&quot;: &quot;last christmas&quot;,
+        &quot;operator&quot;: &quot;and&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h4 id="match-phrase查询"><a href="#match-phrase查询" class="header-anchor">#</a> match phrase查询</h4> <p>专门用于短语的搜索，感觉功能上比match query要更灵活一些。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#加入了slop的时候，就是允许在这些短语的中间加入一个其他的单词
+POST movies/_search
+{
+  &quot;query&quot;: {
+    &quot;match_phrase&quot;: {
+      &quot;title&quot;:{
+        &quot;query&quot;: &quot;one love&quot;,
+        &quot;slop&quot;: 1
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h4 id="query-string-query"><a href="#query-string-query" class="header-anchor">#</a> Query String Query</h4> <p>query string query和下面的simple query string query使用场景比较少。</p> <p>query string 比simple query string使用起来更加灵活。</p> <p>query string 有点类似于URI Query</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#里面也有和URI Search中的DF字段
+POST users/_search
+{
+  &quot;query&quot;: {
+    &quot;query_string&quot;: {
+      &quot;default_field&quot;: &quot;name&quot;,
+      &quot;query&quot;: &quot;Ruan AND Yiming&quot;
+    }
+  }
+}
+#也支持多个字段的查询，和URI Search中一样，括号代表分组
+POST users/_search
+{
+  &quot;query&quot;: {
+    &quot;query_string&quot;: {
+      &quot;fields&quot;:[&quot;name&quot;,&quot;about&quot;],
+      &quot;query&quot;: &quot;(Ruan AND Yiming) OR (Java AND Elasticsearch)&quot;
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h4 id="simple-query-string-query"><a href="#simple-query-string-query" class="header-anchor">#</a> Simple Query String Query</h4> <ul><li>类似Query String，但是会忽略错误的语法，同时只支持部分查询语法</li> <li>不支持AND OR NOT，会当作字符串处理</li> <li>Term之间默认的关系是OR，可以指定operator</li> <li>支持部分逻辑
+<ul><li>+代替AND</li> <li>|代替OR</li> <li>-代替NOT</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>#Simple Query 默认的operator是 Or
+POST users/_search
+{
+  &quot;query&quot;: {
+    &quot;simple_query_string&quot;: {
+      &quot;query&quot;: &quot;Ruan AND Yiming&quot;,
+      &quot;fields&quot;: [&quot;name&quot;]
+    }
+  }
+}
+POST users/_search
+{
+  &quot;query&quot;: {
+    &quot;simple_query_string&quot;: {
+      &quot;query&quot;: &quot;Ruan Yiming&quot;,
+      &quot;fields&quot;: [&quot;name&quot;],
+      &quot;default_operator&quot;: &quot;AND&quot;
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="精确值查询"><a href="#精确值查询" class="header-anchor">#</a> 精确值查询</h3> <p>结构化数据，日期，数字，布尔，term 。。。。</p> <h4 id="term-query"><a href="#term-query" class="header-anchor">#</a> Term query</h4> <p>可以理解为是对精确值的查询。</p> <p>但是Term 查询的特点是不会对查询所带的字段进行分词处理，而索引文档中的text类型的字段值，在输入的时候会对text类型进行分词，小写化处理。</p> <p>要不查询的时候，字段值全用小写；要么使用text的keyword来进行精确匹配，也就是查询的时候输入插入的时候的值的大小写。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 改为小写查询，如果多个单词在一起的，使用起来还是要注意
+POST /products/_search
+{
+  &quot;query&quot;: {
+    &quot;term&quot;: {
+      &quot;desc&quot;: {
+        //&quot;value&quot;: &quot;iPhone&quot;
+        &quot;value&quot;:&quot;iphone&quot;
+      }
+    }
+  }
+}
+#使用keyword进行精确匹配
+POST /products/_search
+{
+  //&quot;explain&quot;: true,
+  &quot;query&quot;: {
+    &quot;term&quot;: {
+      &quot;productID.keyword&quot;: {
+        &quot;value&quot;: &quot;XHDK-A-1293-#fJ3&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h4 id="constant-score转为filter"><a href="#constant-score转为filter" class="header-anchor">#</a> constant score转为filter</h4> <p>将query转为filter过滤，忽略掉了TF-IDF的算分过程，避免了相关性算分的开销。并且Filter可以有效利用缓存</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST /products/_search
+{
+  &quot;explain&quot;: true,
+  &quot;query&quot;: {
+    &quot;constant_score&quot;: {
+      &quot;filter&quot;: {
+        &quot;term&quot;: {
+          &quot;productID.keyword&quot;: &quot;XHDK-A-1293-#fJ3&quot;
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h4 id="布尔值"><a href="#布尔值" class="header-anchor">#</a> 布尔值</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>#对布尔值 match 查询，有算分
+POST products/_search
+{
+  &quot;profile&quot;: &quot;true&quot;,
+  &quot;explain&quot;: true,
+  &quot;query&quot;: {
+    &quot;term&quot;: {
+      &quot;avaliable&quot;: {
+        &quot;value&quot;: &quot;false&quot;
+      }
+    }
+  }
+}
+#一般对布尔值查询会结合上面的过滤到算法
+#对布尔值，通过constant score 转成 filtering，没有算分
+POST products/_search
+{
+  &quot;profile&quot;: &quot;true&quot;,
+  &quot;explain&quot;: true,
+  &quot;query&quot;: {
+    &quot;constant_score&quot;: {
+      &quot;filter&quot;: {
+        &quot;term&quot;: {
+          &quot;avaliable&quot;: {
+            &quot;value&quot;: &quot;false&quot;
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h4 id="查找多个精确值"><a href="#查找多个精确值" class="header-anchor">#</a> 查找多个精确值</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>#字符类型 terms
+POST products/_search
+{
+  &quot;query&quot;: {
+    &quot;constant_score&quot;: {
+      &quot;filter&quot;: {
+        &quot;terms&quot;: {
+          &quot;productID.keyword&quot;: [
+            &quot;QQPX-R-3956-#aD8&quot;,
+            &quot;JODL-X-1937-#pV7&quot;
+          ]
+        }
+      }
+    }
+  }
+}
+#处理多值字段，term 查询是包含，而不是等于
+#针对的是这个term字段的值是一个数值，而并非是唯一的值的情况下
+#可以通过添加一个genre count字段对每个文档的该字段的数组里面的值多个统计
+#在查询的时候，通过去定义这个字段的应该有的值的个数去精确匹配
+POST movies/_search
+{
+  &quot;query&quot;: {
+    &quot;constant_score&quot;: {
+      &quot;filter&quot;: {
+        &quot;term&quot;: {
+          &quot;genre.keyword&quot;: &quot;Comedy&quot;
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h3 id="range"><a href="#range" class="header-anchor">#</a> Range</h3> <h4 id="数字range"><a href="#数字range" class="header-anchor">#</a> 数字Range</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>#数字 Range 查询
+GET products/_search
+{
+    &quot;query&quot; : {
+        &quot;constant_score&quot; : {
+            &quot;filter&quot; : {
+                &quot;range&quot; : {
+                    &quot;price&quot; : {
+                        &quot;gte&quot; : 20,
+                        &quot;lte&quot;  : 30
+                    }
+                }
+            }
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>gt大于</p> <p>lt小于</p> <p>gte大于等于</p> <p>lte小于等于</p> <h4 id="日期range"><a href="#日期range" class="header-anchor">#</a> 日期Range</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code># 日期 range
+POST products/_search
+{
+    &quot;query&quot; : {
+        &quot;constant_score&quot; : {
+            &quot;filter&quot; : {
+                &quot;range&quot; : {
+                    &quot;date&quot; : {
+                      &quot;gte&quot; : &quot;now-1y&quot;
+                    }
+                }
+            }
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>y 年、M 月、w 周、d 天、H或h 小时、m 分钟、s 秒</p> <h3 id="exists查询"><a href="#exists查询" class="header-anchor">#</a> exists查询</h3> <p>使用exist查询来处理<strong>非空NULL值</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#查询存在相应列的文档
+#exists查询
+POST products/_search
+{
+  &quot;query&quot;: {
+    &quot;constant_score&quot;: {
+      &quot;filter&quot;: {
+        &quot;exists&quot;: {
+          &quot;field&quot;: &quot;date&quot;
+        }
+      }
+    }
+  }
+}
+#查询不存在相应列的文档
+POST products/_search
+{
+  &quot;query&quot;: {
+    &quot;constant_score&quot;: {
+      &quot;filter&quot;: {
+        &quot;bool&quot;: {
+          &quot;must_not&quot;: {
+            &quot;exists&quot;: {
+              &quot;field&quot;: &quot;date&quot;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><h3 id="bool查询"><a href="#bool查询" class="header-anchor">#</a> bool查询</h3> <p>bool查询是复合查询。must / should是query context贡献算分；must_not /  filter是filter context不贡献算分。</p> <p>子查询可以任意顺序出现；</p> <p>可以嵌套多个查询；</p> <p>在bool查询中，没有must条件的时候，should中必须至少满足一条查询。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#基本语法
+POST /products/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot; : {
+      &quot;must&quot; : {
+        &quot;term&quot; : { &quot;price&quot; : &quot;30&quot; }
+      },
+      &quot;filter&quot;: {
+        &quot;term&quot; : { &quot;avaliable&quot; : &quot;true&quot; }
+      },
+      &quot;must_not&quot; : {
+        &quot;range&quot; : {
+          &quot;price&quot; : { &quot;lte&quot; : 10 }
+        }
+      },
+      &quot;should&quot; : [
+        { &quot;term&quot; : { &quot;productID.keyword&quot; : &quot;JODL-X-1937-#pV7&quot; } },
+        { &quot;term&quot; : { &quot;productID.keyword&quot; : &quot;XHDK-A-1293-#fJ3&quot; } }
+      ],
+      &quot;minimum_should_match&quot; :1
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h4 id="解决term-query包含而不是相等问题"><a href="#解决term-query包含而不是相等问题" class="header-anchor">#</a> 解决term query包含而不是相等问题</h4> <p>针对term查询的字段，如果是一个数组类型的时候，term查询是包含而不是相等的问题，通过bool查询来解决，需要新增一个数组里面值的个数的字段。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#must，有算分
+POST /newmovies/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;must&quot;: [
+        {&quot;term&quot;: {&quot;genre.keyword&quot;: {&quot;value&quot;: &quot;Comedy&quot;}}},
+        {&quot;term&quot;: {&quot;genre_count&quot;: {&quot;value&quot;: 1}}}
+
+      ]
+    }
+  }
+}
+#Filter。不参与算分，结果的score是0
+POST /newmovies/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;filter&quot;: [
+        {&quot;term&quot;: {&quot;genre.keyword&quot;: {&quot;value&quot;: &quot;Comedy&quot;}}},
+        {&quot;term&quot;: {&quot;genre_count&quot;: {&quot;value&quot;: 1}}}
+        ]
+
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h4 id="bool嵌套查询"><a href="#bool嵌套查询" class="header-anchor">#</a> bool嵌套查询</h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>#嵌套，实现了 should not 逻辑
+POST /products/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;must&quot;: {
+        &quot;term&quot;: {
+          &quot;price&quot;: &quot;30&quot;
+        }
+      },
+      &quot;should&quot;: [
+        {
+          &quot;bool&quot;: {
+            &quot;must_not&quot;: {
+              &quot;term&quot;: {
+                &quot;avaliable&quot;: &quot;false&quot;
+              }
+            }
+          }
+        }
+      ],
+      &quot;minimum_should_match&quot;: 1
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h5 id="改变相关度算分"><a href="#改变相关度算分" class="header-anchor">#</a> 改变相关度算分</h5> <p>通过嵌套的bool查询中的问题，来改变相关度的算分的问题。</p> <p>在同一层级下竞争字段，具有相同的权重；通过嵌套bool查询，可以改变对算分的影响。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#同级查询
+POST /animals/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;should&quot;: [
+        { &quot;term&quot;: { &quot;text&quot;: &quot;brown&quot; }},
+        { &quot;term&quot;: { &quot;text&quot;: &quot;red&quot; }},
+        { &quot;term&quot;: { &quot;text&quot;: &quot;quick&quot;   }},
+        { &quot;term&quot;: { &quot;text&quot;: &quot;dog&quot;   }}
+      ]
+    }
+  }
+}
+#嵌套多级查询
+POST /animals/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;should&quot;: [
+        { &quot;term&quot;: { &quot;text&quot;: &quot;quick&quot; }},
+        { &quot;term&quot;: { &quot;text&quot;: &quot;dog&quot;   }},
+        {
+          &quot;bool&quot;:{
+            &quot;should&quot;:[
+               { &quot;term&quot;: { &quot;text&quot;: &quot;brown&quot; }},
+                 { &quot;term&quot;: { &quot;text&quot;: &quot;brown&quot; }},
+            ]
+          }
+
+        }
+      ]
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><h3 id="boosting-query"><a href="#boosting-query" class="header-anchor">#</a> Boosting Query</h3> <h4 id="控制字段的boosting"><a href="#控制字段的boosting" class="header-anchor">#</a> 控制字段的boosting</h4> <p>在bool查询中，通过指定boost的值来实现影响算分，控制相关度。</p> <p>参数boost的含义：当boost&gt;1的时候，打分的相关度相对性提升；当0&lt;boost&lt;1的时候，打分的权重相对性降低;当boost&lt;0的时候，贡献负分。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST blogs/_search
+{
+  &quot;query&quot;: {
+    &quot;bool&quot;: {
+      &quot;should&quot;: [
+        {&quot;match&quot;: {
+          &quot;title&quot;: {
+            &quot;query&quot;: &quot;apple,ipad&quot;,
+            &quot;boost&quot;: 1.1
+          }
+        }},
+        {&quot;match&quot;: {
+          &quot;content&quot;: {
+            &quot;query&quot;: &quot;apple,ipad&quot;,
+            &quot;boost&quot;: 2
+          }
+        }}
+      ]
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h4 id="not-quite-not"><a href="#not-quite-not" class="header-anchor">#</a> Not Quite Not</h4> <p>意思是查询的时候，正确的值要第一个返回(例如这里我要求查询的苹果公司产品要优先出现)，其他相关的(苹果汁，苹果派的)等信息也要返回，但是是靠后面返回。</p> <p>提高了查准率和查全率。</p> <p>使用了boosting query的方式来实现。positive的值是对查询算法加分的，negative的值是对查询算分减分的，negative_boost是指减多少分。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST news/_search
+{
+  &quot;query&quot;: {
+    &quot;boosting&quot;: {
+      &quot;positive&quot;: {
+        &quot;match&quot;: {
+          &quot;content&quot;: &quot;apple&quot;
+        }
+      },
+      &quot;negative&quot;: {
+        &quot;match&quot;: {
+          &quot;content&quot;: &quot;pie&quot;
+        }
+      },
+      &quot;negative_boost&quot;: 0.5
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="disjunction-max-query"><a href="#disjunction-max-query" class="header-anchor">#</a> Disjunction Max Query</h3> <p>Disjunction Max Query应用于单字符串多字段查询的场景，很多搜索引擎都是这样的。允许你只是输入一个字符串，要多所有的字段进行查询。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST blogs/_search
+{
+    &quot;query&quot;: {
+        &quot;dis_max&quot;: {
+            &quot;queries&quot;: [
+                { &quot;match&quot;: { &quot;title&quot;: &quot;Quick pets&quot; }},
+                { &quot;match&quot;: { &quot;body&quot;:  &quot;Quick pets&quot; }}
+            ]
+        }
+    }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h4 id="使用tie-breaker参数"><a href="#使用tie-breaker参数" class="header-anchor">#</a> 使用tie breaker参数</h4> <p>有一些情况下，同时匹配title和body字段的文档比只与一个字段匹配的文档的相关度更高。而disjunction max query 查询只会简单地使用单个最佳匹配语句的评分_score作为整体评分。这个时候，可以使用tie_breaker参数来调整。</p> <ul><li>获取最佳匹配语句的评分_score;</li> <li>将其他匹配语句的评分与tie_breaker相乘；</li> <li>对以上评分求和并规范化。</li> <li>Tier Breaker是一个介于0-1之间的浮点数。0代表使用最佳匹配；1代表所有语句同等重要。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST blogs/_search
+{
+    &quot;query&quot;: {
+        &quot;dis_max&quot;: {
+            &quot;queries&quot;: [
+                { &quot;match&quot;: { &quot;title&quot;: &quot;Quick pets&quot; }},
+                { &quot;match&quot;: { &quot;body&quot;:  &quot;Quick pets&quot; }}
+            ],
+            &quot;tie_breaker&quot;: 0.2
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="multi-match"><a href="#multi-match" class="header-anchor">#</a> Multi Match</h3> <p>也是运用于单字符串多字段的场景下查询。</p> <p>best_fields的场景，最佳字段，单字段之间相互竞争，又相互关联的时候。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST blogs/_search
+{
+  &quot;query&quot;: {
+    &quot;multi_match&quot;: {
+      &quot;type&quot;: &quot;best_fields&quot;,
+      &quot;query&quot;: &quot;Quick pets&quot;,
+      &quot;fields&quot;: [&quot;title&quot;,&quot;body&quot;],
+      &quot;tie_breaker&quot;: 0.2,
+      &quot;minimum_should_match&quot;: &quot;20%&quot;
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>most fields:多数字段的场景</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>PUT /titles
+{
+  &quot;mappings&quot;: {
+    &quot;properties&quot;: {
+      &quot;title&quot;: {
+        &quot;type&quot;: &quot;text&quot;,
+        &quot;analyzer&quot;: &quot;english&quot;,
+        &quot;fields&quot;: {&quot;std&quot;: {&quot;type&quot;: &quot;text&quot;,&quot;analyzer&quot;: &quot;standard&quot;}}
+      }
+    }
+  }
+}
+GET /titles/_search
+{
+   &quot;query&quot;: {
+        &quot;multi_match&quot;: {
+            &quot;query&quot;:  &quot;barking dogs&quot;,
+            &quot;type&quot;:   &quot;most_fields&quot;,
+            &quot;fields&quot;: [ &quot;title&quot;, &quot;title.std&quot; ]
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>cross_fields:用于跨字段的查询</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>GET address/_search
+{
+   &quot;query&quot;: {
+        &quot;multi_match&quot;: {
+            &quot;query&quot;:  &quot;Poland Street W1V&quot;,
+            &quot;type&quot;:   &quot;cross_fields&quot;,
+            &quot;operator&quot;: &quot;and&quot;,
+            &quot;fields&quot;: [ &quot;street&quot;, &quot;city&quot;,&quot;country&quot; ]
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="高亮显示"><a href="#高亮显示" class="header-anchor">#</a> 高亮显示</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST tmdb/_search
+{
+  &quot;_source&quot;: [&quot;title&quot;,&quot;overview&quot;],
+  &quot;query&quot;: {
+    &quot;multi_match&quot;: {
+      &quot;query&quot;: &quot;basketball with cartoon aliens&quot;,
+      &quot;fields&quot;: [&quot;title&quot;,&quot;overview&quot;]
+    }
+  },
+  &quot;highlight&quot; : {
+        &quot;fields&quot; : {
+            &quot;overview&quot; : { &quot;pre_tags&quot; : [&quot;\\033[0;32;40m&quot;], &quot;post_tags&quot; : [&quot;\\033[0m&quot;] },
+            &quot;title&quot; : { &quot;pre_tags&quot; : [&quot;\\033[0;32;40m&quot;], &quot;post_tags&quot; : [&quot;\\033[0m&quot;] }
+
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="search-template"><a href="#search-template" class="header-anchor">#</a> Search Template</h3> <p>ES中的search template是用来解耦程序的开发和ES搜索DSL的</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST _scripts/tmdb
+{
+  &quot;script&quot;: {
+    &quot;lang&quot;: &quot;mustache&quot;,
+    &quot;source&quot;: {
+      &quot;_source&quot;: [
+        &quot;title&quot;,&quot;overview&quot;
+      ],
+      &quot;size&quot;: 20,
+      &quot;query&quot;: {
+        &quot;multi_match&quot;: {
+          &quot;query&quot;: &quot;{{q}}&quot;,
+          &quot;fields&quot;: [&quot;title&quot;,&quot;overview&quot;]
+        }
+      }
+    }
+  }
+}
+#调用template
+POST tmdb/_search/template
+{
+    &quot;id&quot;:&quot;tmdb&quot;,
+    &quot;params&quot;: {
+        &quot;q&quot;: &quot;basketball with cartoon aliens&quot;
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h2 id="suggester-api"><a href="#suggester-api" class="header-anchor">#</a> Suggester API</h2> <ul><li>搜索引擎中类似的功能，在ES中是通过Suggester API实现的。</li> <li>原理：将输入的文本分解为Token，然后在搜索的字典里查找相似的Term并返回。</li> <li>根据不同的使用场景，ES设计了4种类别的Suggesters
+<ul><li>Term &amp; Phrase Suggester</li> <li>Complete &amp; Context Suggester</li></ul></li></ul> <h2 id="term-suggester"><a href="#term-suggester" class="header-anchor">#</a> Term Suggester</h2> <p>有三种suggestion Mode:</p> <ul><li>Missing：如索引中已经存在，就不提供建议</li> <li>Popular：推荐出现频率更加高的词</li> <li>Always：无论是否存在，都提供建议。</li></ul> <p>每一个建议都包含一个算分，相似性是通过levenshtein edit distance的算法实现的。核心思想就是一个词改动多少字符就可以和另外一个词一致。提供了很多可选参数来控制相似性的模糊程度。例如&quot;max_edits&quot;</p> <h3 id="missing-mode"><a href="#missing-mode" class="header-anchor">#</a> Missing Mode</h3> <p>Suggester就是一个特殊类型的搜索。&quot;text&quot;里是调用时候提供的文本，通常来自于用户界面上用户输入的内容。</p> <p>用户输入的&quot;lucen&quot;是一个错误的拼写。</p> <p>回到指定的字段&quot;body&quot;上搜索，当无法搜索到结果时(missing)，返回建议的词。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST /articles/_search
+{
+  &quot;size&quot;: 1,
+  &quot;query&quot;: {
+    &quot;match&quot;: {
+      &quot;body&quot;: &quot;lucen rock&quot;
+    }
+  },
+  &quot;suggest&quot;: {
+    &quot;term-suggestion&quot;: {
+      &quot;text&quot;: &quot;lucen rock&quot;,
+      &quot;term&quot;: {
+        &quot;suggest_mode&quot;: &quot;missing&quot;,
+        &quot;field&quot;: &quot;body&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><h3 id="popular-mode"><a href="#popular-mode" class="header-anchor">#</a> Popular Mode</h3> <p>推荐出现频率更多高的词</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST /articles/_search
+{
+
+  &quot;suggest&quot;: {
+    &quot;term-suggestion&quot;: {
+      &quot;text&quot;: &quot;lucen rock&quot;,
+      &quot;term&quot;: {
+        &quot;suggest_mode&quot;: &quot;popular&quot;,
+        &quot;field&quot;: &quot;body&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="always-mode"><a href="#always-mode" class="header-anchor">#</a> Always Mode</h3> <p>无论是否存在，都提供建议</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST /articles/_search
+{
+
+  &quot;suggest&quot;: {
+    &quot;term-suggestion&quot;: {
+      &quot;text&quot;: &quot;lucen rock&quot;,
+      &quot;term&quot;: {
+        &quot;suggest_mode&quot;: &quot;always&quot;,
+        &quot;field&quot;: &quot;body&quot;,
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>sorting by frequentcy和prefix length</p> <p>默认按照score排序，也可以按照&quot;frequency&quot;</p> <p>默认首字母不一致就不会匹配推荐，但是如果将prefix_length设置为0，就会为hock建议rock</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST /articles/_search
+{
+
+  &quot;suggest&quot;: {
+    &quot;term-suggestion&quot;: {
+      &quot;text&quot;: &quot;lucen hocks&quot;,
+      &quot;term&quot;: {
+        &quot;suggest_mode&quot;: &quot;always&quot;,
+        &quot;field&quot;: &quot;body&quot;,
+        &quot;prefix_length&quot;:0,
+        &quot;sort&quot;: &quot;frequency&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="phrase-suggester"><a href="#phrase-suggester" class="header-anchor">#</a> Phrase Suggester</h2> <p>Phrase Suggester在term suggester上增加了一些额外的逻辑。</p> <p>例如下面的参数：</p> <ul><li>Suggest Mode: missing，popular，always</li> <li>Max Errors：最多可以拼错的Terms数</li> <li>Confidence：限制返回结果数，默认是1</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>POST /articles/_search
+{
+  &quot;suggest&quot;: {
+    &quot;my-suggestion&quot;: {
+      &quot;text&quot;: &quot;lucne and elasticsear rock hello world &quot;,
+      &quot;phrase&quot;: {
+        &quot;field&quot;: &quot;body&quot;,
+        &quot;max_errors&quot;:2,
+        &quot;confidence&quot;:0,
+        &quot;direct_generator&quot;:[{
+          &quot;field&quot;:&quot;body&quot;,
+          &quot;suggest_mode&quot;:&quot;always&quot;
+        }],
+        &quot;highlight&quot;: {
+          &quot;pre_tag&quot;: &quot;&lt;em&gt;&quot;,
+          &quot;post_tag&quot;: &quot;&lt;/em&gt;&quot;
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h2 id="completion-suggester"><a href="#completion-suggester" class="header-anchor">#</a> Completion Suggester</h2> <ul><li><p>completion Suggester提供了&quot;自动完成&quot;(auto complete)的功能。用户每输入一个字符，就需要即时发送一个查询请求到后端查找匹配项。</p></li> <li><p>对性能要求比较苛刻。ES采用了不同的数据结构，并非通过倒排索引来完成的。而是将Analyze的数据编码成FST和索引一起存放。FST会被ES整个加载进内存，速度很快。</p></li> <li><p>FST只能用于前缀查找</p></li></ul> <h3 id="使用自动补全suggester步骤"><a href="#使用自动补全suggester步骤" class="header-anchor">#</a> 使用自动补全suggester步骤</h3> <p>定义mapping，使用&quot;completion&quot; type</p> <p>索引数据</p> <p>运行&quot;suggest&quot;查询，得到搜索建议</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#定义mapping
+PUT articles
+{
+  &quot;mappings&quot;: {
+    &quot;properties&quot;: {
+      &quot;title_completion&quot;:{
+        &quot;type&quot;: &quot;completion&quot;
+      }
+    }
+  }
+}
+#索引数据
+POST articles/_bulk
+{ &quot;index&quot; : { } }
+{ &quot;title_completion&quot;: &quot;lucene is very cool&quot;}
+{ &quot;index&quot; : { } }
+{ &quot;title_completion&quot;: &quot;Elasticsearch builds on top of lucene&quot;}
+{ &quot;index&quot; : { } }
+{ &quot;title_completion&quot;: &quot;Elasticsearch rocks&quot;}
+{ &quot;index&quot; : { } }
+{ &quot;title_completion&quot;: &quot;elastic is the company behind ELK stack&quot;}
+{ &quot;index&quot; : { } }
+{ &quot;title_completion&quot;: &quot;Elk stack rocks&quot;}
+{ &quot;index&quot; : {} }
+#使用自动补全
+POST articles/_search?pretty
+{
+  &quot;size&quot;: 0,
+  &quot;suggest&quot;: {
+    &quot;article-suggester&quot;: {
+      &quot;prefix&quot;: &quot;elk &quot;,
+      &quot;completion&quot;: {
+        &quot;field&quot;: &quot;title_completion&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h2 id="context-suggester"><a href="#context-suggester" class="header-anchor">#</a> Context Suggester</h2> <p>上下文建议搜索</p> <p>context suggester是completion suggester的扩展，</p> <p>可以在搜索中加入更多的上下文信息，例如，输入&quot;star&quot;</p> <ul><li>咖啡相关：建议&quot;starbucks&quot;</li> <li>电影相关的：&quot;star wars&quot;</li></ul> <h3 id="实现上下文suggester"><a href="#实现上下文suggester" class="header-anchor">#</a> 实现上下文suggester</h3> <ul><li>可以定义两种类型的context
+<ul><li>category 任意的字符串</li> <li>geo 地理位置信息</li></ul></li> <li>实现context suggester的具体步骤
+<ul><li>定制一个mapping</li> <li>索引数据，并且为每个文档加入context信息</li> <li>结合context进行suggestion查询</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>#定义mapping
+PUT comments/_mapping
+{
+  &quot;properties&quot;: {
+    &quot;comment_autocomplete&quot;:{
+      &quot;type&quot;: &quot;completion&quot;,
+      &quot;contexts&quot;:[{
+        &quot;type&quot;:&quot;category&quot;,
+        &quot;name&quot;:&quot;comment_category&quot;
+      }]
+    }
+  }
+}
+#插入数据
+POST comments/_doc
+{
+  &quot;comment&quot;:&quot;I love the star war movies&quot;,
+  &quot;comment_autocomplete&quot;:{
+    &quot;input&quot;:[&quot;star wars&quot;],
+    &quot;contexts&quot;:{
+      &quot;comment_category&quot;:&quot;movies&quot;
+    }
+  }
+}
+POST comments/_doc
+{
+  &quot;comment&quot;:&quot;Where can I find a Starbucks&quot;,
+  &quot;comment_autocomplete&quot;:{
+    &quot;input&quot;:[&quot;starbucks&quot;],
+    &quot;contexts&quot;:{
+      &quot;comment_category&quot;:&quot;coffee&quot;
+    }
+  }
+}
+#带上下文搜索
+POST comments/_search
+{
+  &quot;suggest&quot;: {
+    &quot;MY_SUGGESTION&quot;: {
+      &quot;prefix&quot;: &quot;sta&quot;,
+      &quot;completion&quot;:{
+        &quot;field&quot;:&quot;comment_autocomplete&quot;,
+        &quot;contexts&quot;:{
+          &quot;comment_category&quot;:&quot;coffee&quot;
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br></div></div><h2 id="metric-aggregation"><a href="#metric-aggregation" class="header-anchor">#</a> Metric Aggregation</h2> <p>单值分析：只输出一个分析结果</p> <ul><li>min,max,avg,sum</li> <li>cardinality (类似于distincct count)</li></ul> <p>多值分析：输出多个分析结果</p> <ul><li>stats, exended stats</li> <li>percentile, percentile rank</li> <li>top hits (排在前面的示例)</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 多个 Metric 聚合，找到最低最高和平均工资
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;max_salary&quot;: {
+      &quot;max&quot;: {
+        &quot;field&quot;: &quot;salary&quot;
+      }
+    },
+    &quot;min_salary&quot;: {
+      &quot;min&quot;: {
+        &quot;field&quot;: &quot;salary&quot;
+      }
+    },
+    &quot;avg_salary&quot;: {
+      &quot;avg&quot;: {
+        &quot;field&quot;: &quot;salary&quot;
+      }
+    }
+  }
+}
+# 一个聚合，输出多值
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;stats_salary&quot;: {
+      &quot;stats&quot;: {
+        &quot;field&quot;:&quot;salary&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div><h2 id="bucket-aggregation"><a href="#bucket-aggregation" class="header-anchor">#</a> Bucket Aggregation</h2> <p>按照一定的规则，将文档分配到不同的桶中，从而达到分类的目的。ES提供的一些常见的bucket aggregation。</p> <ul><li>terms</li> <li>数字类型，有range/data range，或者histogram / data histogram</li> <li>支持嵌套：也就是在桶里再做分桶</li></ul> <h3 id="terms-aggregation"><a href="#terms-aggregation" class="header-anchor">#</a> Terms Aggregation</h3> <p>在对term进行聚合的时候，如果是text类型。有两种方法，要么指定keyword字段，要么就需要打开fieldata，但是fieldata会查找出对应分词后的term。才可以进行terms aggregation</p> <ul><li>keyword默认支持doc_values</li> <li>text需要咋mapping中enable，会按照分词后的结果进行分</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code># 对 Text 字段进行 terms 聚合查询，失败
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;jobs&quot;: {
+      &quot;terms&quot;: {
+        &quot;field&quot;:&quot;job&quot;
+      }
+    }
+  }
+}
+# 对keword 进行聚合
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;jobs&quot;: {
+      &quot;terms&quot;: {
+        &quot;field&quot;:&quot;job.keyword&quot;
+      }
+    }
+  }
+}
+# 对 Text 字段打开 fielddata，支持terms aggregation
+PUT employees/_mapping
+{
+  &quot;properties&quot; : {
+    &quot;job&quot;:{
+       &quot;type&quot;:     &quot;text&quot;,
+       &quot;fielddata&quot;: true
+    }
+  }
+}
+# 对 Text 字段进行 terms 分词。分词后的terms,结果和上面指定keyword的方式是不一样的，这是分词后的结果
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;jobs&quot;: {
+      &quot;terms&quot;: {
+        &quot;field&quot;:&quot;job&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><h3 id="cardinality"><a href="#cardinality" class="header-anchor">#</a> Cardinality</h3> <p>类似于SQL中的Distinct</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 对job.keyword 和 job 进行 terms 聚合，分桶的总数并不一样
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;cardinate&quot;: {
+      &quot;cardinality&quot;: {
+        &quot;field&quot;: &quot;job&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="指定size分桶"><a href="#指定size分桶" class="header-anchor">#</a> 指定SIZE分桶</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>#指定 bucket 的 size
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;ages_5&quot;: {
+      &quot;terms&quot;: {
+        &quot;field&quot;:&quot;age&quot;,
+        &quot;size&quot;:3
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="嵌套聚合"><a href="#嵌套聚合" class="header-anchor">#</a> 嵌套聚合</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code># 指定size，不同工种中，年纪最大的3个员工的具体信息
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;jobs&quot;: {
+      &quot;terms&quot;: {
+        &quot;field&quot;:&quot;job.keyword&quot;
+      },
+      &quot;aggs&quot;:{
+        &quot;old_employee&quot;:{
+          &quot;top_hits&quot;:{
+            &quot;size&quot;:3,
+            &quot;sort&quot;:[
+              {
+                &quot;age&quot;:{
+                  &quot;order&quot;:&quot;desc&quot;
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="优化terms聚合性能"><a href="#优化terms聚合性能" class="header-anchor">#</a> 优化terms聚合性能</h3> <p>通过指定mapping中，打开eager_global_ordinals为true，这会让索引数据的时候就开始对数据文档进行预先处理，这样对于要求频繁使用聚合的场景，或者说是要对聚合实时数据有更高的性能的时候来使用。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>put index
+{
+  &quot;mappings&quot;: {
+    &quot;properties&quot;: {
+      &quot;foo&quot;: {
+        &quot;type&quot;: &quot;keyword&quot;,
+        &quot;eager_global_ordinals&quot;: true
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="range-聚合"><a href="#range-聚合" class="header-anchor">#</a> Range 聚合</h3> <p>自己自定义range</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#Salary Ranges 分桶，可以自己定义 key
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;salary_range&quot;: {
+      &quot;range&quot;: {
+        &quot;field&quot;:&quot;salary&quot;,
+        &quot;ranges&quot;:[
+          {
+            &quot;to&quot;:10000
+          },
+          {
+            &quot;from&quot;:10000,
+            &quot;to&quot;:20000
+          },
+          {
+            &quot;key&quot;:&quot;&gt;20000&quot;,
+            &quot;from&quot;:20000
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3 id="histogram聚合"><a href="#histogram聚合" class="header-anchor">#</a> Histogram聚合</h3> <p>通过指定分桶的间隔，来进行分桶</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#Salary Histogram,工资0到10万，以 5000一个区间进行分桶
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;salary_histrogram&quot;: {
+      &quot;histogram&quot;: {
+        &quot;field&quot;:&quot;salary&quot;,
+        &quot;interval&quot;:5000,
+        &quot;extended_bounds&quot;:{
+          &quot;min&quot;:0,
+          &quot;max&quot;:100000
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="pipeline-聚合分析"><a href="#pipeline-聚合分析" class="header-anchor">#</a> Pipeline 聚合分析</h2> <p>pipeline管道的概念：支持对聚合分析的结果，再次进行聚合分析。</p> <p>Pipeline的分析结果会输出到原结果中，根据位置的不同，分为两类：</p> <ul><li>Sibling 结果和现有分析结果同级
+<ul><li>max，min，avg &amp; sum bucket</li> <li>stats , extended status buccket</li> <li>percentiles bucket</li></ul></li> <li>Parent 结果内嵌到现有的聚合分析结果之中
+<ul><li>derivative (求导)</li> <li>cumultive sum（累计求和）</li> <li>moving function (滑动窗口)</li></ul></li></ul> <h3 id="sibling-pipeline"><a href="#sibling-pipeline" class="header-anchor">#</a> Sibling Pipeline</h3> <p>查看到平均工资最低的工作类型</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 平均工资最低的工作类型
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;jobs&quot;: {
+      &quot;terms&quot;: {
+        &quot;field&quot;: &quot;job.keyword&quot;,
+        &quot;size&quot;: 10
+      },
+      &quot;aggs&quot;: {
+        &quot;avg_salary&quot;: {
+          &quot;avg&quot;: {
+            &quot;field&quot;: &quot;salary&quot;
+          }
+        }
+      }
+    },
+    &quot;min_salary_by_job&quot;:{
+      &quot;min_bucket&quot;: {
+        &quot;buckets_path&quot;: &quot;jobs&gt;avg_salary&quot;
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>平均工资的统计分析</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 平均工资的统计分析
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;jobs&quot;: {
+      &quot;terms&quot;: {
+        &quot;field&quot;: &quot;job.keyword&quot;,
+        &quot;size&quot;: 10
+      },
+      &quot;aggs&quot;: {
+        &quot;avg_salary&quot;: {
+          &quot;avg&quot;: {
+            &quot;field&quot;: &quot;salary&quot;
+          }
+        }
+      }
+    },
+    &quot;stats_salary_by_job&quot;:{
+      &quot;stats_bucket&quot;: {
+        &quot;buckets_path&quot;: &quot;jobs&gt;avg_salary&quot;
+      }
+    }
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="parent-pipeline"><a href="#parent-pipeline" class="header-anchor">#</a> Parent Pipeline</h3> <p>按照年龄，对工资进行求导(看工资发展的趋势)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>#按照年龄对平均工资求导
+POST employees/_search
+{
+  &quot;size&quot;: 0,
+  &quot;aggs&quot;: {
+    &quot;age&quot;: {
+      &quot;histogram&quot;: {
+        &quot;field&quot;: &quot;age&quot;,
+        &quot;min_doc_count&quot;: 1,
+        &quot;interval&quot;: 1
+      },
+      &quot;aggs&quot;: {
+        &quot;avg_salary&quot;: {
+          &quot;avg&quot;: {
+            &quot;field&quot;: &quot;salary&quot;
+          }
+        },
+        &quot;derivative_avg_salary&quot;:{
+          &quot;derivative&quot;: {
+            &quot;buckets_path&quot;: &quot;avg_salary&quot;
+          }
+        }
+      }
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div></div></div>  <div class="page-edit"><div class="edit-link"><a href="https://github.com/chuck6/blog/edit/master/docs/01.数据库/05.ELK/03.ES_API集合.md" target="_blank" rel="noopener noreferrer">编辑</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="tags"><a href="/blog/tags/?tag=ELK" title="标签">#ELK</a></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/02/13, 22:40:21</span></div></div> <div class="page-nav-wapper"><div class="page-nav-centre-wrap"><a href="/blog/pages/127f0c/" class="page-nav-centre page-nav-centre-prev"><div class="tooltip">ES架构规划</div></a> <a href="/blog/pages/2f7a8b/" class="page-nav-centre page-nav-centre-next"><div class="tooltip">ES_常见问题列表</div></a></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/blog/pages/127f0c/" class="prev">ES架构规划</a></span> <span class="next"><a href="/blog/pages/2f7a8b/">ES_常见问题列表</a>→
+      </span></p></div></div></div> <div class="article-list"><div class="article-title"><a href="/blog/archives/" class="iconfont icon-bi">最近更新</a></div> <div class="article-wrapper"><dl><dd>01</dd> <dt><a href="/blog/pages/c47902/"><div>
+            “幸福才是人生的终极财富” ——《幸福的方法》读书笔记5
+            <!----></div></a> <span class="date">01-05</span></dt></dl><dl><dd>02</dd> <dt><a href="/blog/pages/e94e08/"><div>
+            “幸福与成功” ——《幸福的方法》读书笔记4
+            <!----></div></a> <span class="date">01-04</span></dt></dl><dl><dd>03</dd> <dt><a href="/blog/pages/d47f45/"><div>
+            “幸福是什么” ——《幸福的方法》读书笔记3
+            <!----></div></a> <span class="date">01-04</span></dt></dl> <dl><dd></dd> <dt><a href="/blog/archives/" class="more">更多文章&gt;</a></dt></dl></div></div></main></div> <div class="footer"><div class="icons"><a href="mailto:492018329@qq.com" title="发邮件" target="_blank" class="iconfont icon-youjian"></a><a href="https://github.com/chuck6" title="GitHub" target="_blank" class="iconfont icon-github"></a><a href="https://music.163.com/#/playlist?id=755597173" title="听音乐" target="_blank" class="iconfont icon-erji"></a></div> 
+  Theme by
+  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank" title="本站主题">Vdoing</a> 
+    | Copyright © 2020-2023
+    <span>Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a></span></div> <div class="buttons"><div title="返回顶部" class="button blur go-to-top iconfont icon-fanhuidingbu" style="display:none;"></div> <div title="去评论" class="button blur go-to-comment iconfont icon-pinglun" style="display:none;"></div> <div title="主题模式" class="button blur theme-mode-but iconfont icon-zhuti"><ul class="select-box" style="display:none;"><li class="iconfont icon-zidong">
+          跟随系统
+        </li><li class="iconfont icon-rijianmoshi">
+          浅色模式
+        </li><li class="iconfont icon-yejianmoshi">
+          深色模式
+        </li><li class="iconfont icon-yuedu">
+          阅读模式
+        </li></ul></div></div> <!----> <!----> <!----></div><div class="global-ui"><!----><div></div></div></div>
+    <script src="/blog/assets/js/app.83c3319c.js" defer></script><script src="/blog/assets/js/4.85336ac2.js" defer></script><script src="/blog/assets/js/20.10a4abbb.js" defer></script>
+  </body>
+</html>
